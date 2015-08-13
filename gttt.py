@@ -1,6 +1,6 @@
 # Gravity TicTacToe - GraviTicTacToe
 # Thomas Varnish (C) 2015
-import time, sys
+import sys
 
 class Game():
     board = [[0,0,0],
@@ -192,20 +192,3 @@ class Game():
                 print "\nCongratulations! %s WINS!\n" % self.o_name.upper()
                 raw_input("\nPress Enter to Quit...")
                 sys.exit()
-                
-        
-g = Game()
-g.assignPlayers()
-while g.playing:
-    g.displayBoard()
-    g.checkWin()
-    g.checkDraw_filled()
-    g.getMove(g.o_name)
-    g.displayBoard()
-    time.sleep(0.5)
-    g.checkDraw_filled()
-    g.getMove(g.x_name)
-    g.displayBoard()
-    time.sleep(0.25)
-    g.turnBoard()
-    time.sleep(0.25)
