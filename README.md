@@ -6,4 +6,4 @@ GraviTicTacToe is just like normal TicTacToe (or Noughts and Crosses), in that y
 You play by entering a coordinate for your move, 0-2 for the row first, then 0-2 for the column (as this is how Python 2D lists work - I haven't yet made it more user friendly)
 
 ## Screenshots
-![Screenshot showing gameplay](/../screenshots/gravitictactoe_screenshot_001.png?raw=true "Example of gameplay")
+![Screenshot showing gameplay](https://raw.github.com/varnisht/GraviTicTacToe/screenshots/gravitictactoe_screenshot_001.PNG?raw=true "Example of gameplay")
