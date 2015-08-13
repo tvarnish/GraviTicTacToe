@@ -31,7 +31,7 @@ class Game():
     def assignPlayers(self, o_name="", x_name=""):
         if o_name == "":
             o_name = raw_input("Who is Player 1 ? > ")
-            if raw_input("Is <%s> correct? Y/n > ").lower() in ["y", "ye", "yes"]:
+            if raw_input("Is <%s> correct? Y/n > " % o_name).lower() in ["y", "ye", "yes"]:
                 self.o_name = o_name
             else:
                 o_name = raw_input("Who is Player 1 ? > ")
@@ -42,7 +42,7 @@ class Game():
 
         if x_name == "":
             x_name = raw_input("Who is Player 2 ? > ")
-            if raw_input("Is <%s> correct? Y/n > ").lower() in ["y", "ye", "yes"]:
+            if raw_input("Is <%s> correct? Y/n > " % x_name).lower() in ["y", "ye", "yes"]:
                 self.x_name = x_name
             else:
                 x_name = raw_input("Who is Player 2 ? > ")
